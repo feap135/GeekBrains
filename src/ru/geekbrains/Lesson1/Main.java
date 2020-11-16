@@ -1,8 +1,8 @@
 package ru.geekbrains.Lesson1;
 
 /**
- * Написать метод, принимающий на вход два целых числа и проверяющий, что их сумма лежит в предела
- * х от 10 до 20 (включительно), если да – вернуть true, в противном случае – false.
+ * 5. Написать метод, которому в качестве параметра передается целое число, метод должен напечатать в консоль,
+ * положительное ли число передали или отрицательное. Замечание: ноль считаем положительным числом.
  */
 
 public class Main {
@@ -17,7 +17,8 @@ public class Main {
         boolean a = true;
 
         work3(1, 2, 3, 4);
-        work4(3,87);
+        work4(3, 87);
+        work5(-6);
     }
 
     public static void work3(float a, float b, float c, float d) {
@@ -25,16 +26,24 @@ public class Main {
         System.out.println(e);
     }
 
-   public static boolean work4(int a, int b){
+    public static boolean work4(int a, int b) {
         int x = a + b;
-        if (x >= 10 && x<=20) {
+        if (x >= 10 && x <= 20) {
             System.out.println(true);
             return true;
-        }
-        else {
+        } else {
             System.out.println(false);
             return false;
         }
     }
+
+    public static void work5(int a) {
+        if (a >= 0) {
+            System.out.println("положительная цифра/число");
+        } else {
+            System.out.println("отрицательная цифра/число");
+        }
+    }
+
 }
 
