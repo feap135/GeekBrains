@@ -24,6 +24,7 @@ public class Main {
         work4(3, 87);
         work5(-6);
         work6(1);
+        work7("Hello,geek!");
     }
 
     public static void work3(float a, float b, float c, float d) {
@@ -50,12 +51,17 @@ public class Main {
         }
     }
 
-    public static void work6(int i){
+    public static void work6(int i) {
         if (i < 0) {
             System.out.println(true);
         } else {
             System.out.println(false);
         }
+
+    }
+
+    public static void work7(String s) {
+        System.out.println(s);
 
     }
 }
