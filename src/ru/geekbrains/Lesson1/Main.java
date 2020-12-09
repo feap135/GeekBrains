@@ -1,5 +1,9 @@
 package ru.geekbrains.Lesson1;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
+import java.sql.SQLOutput;
+
 /**
  * 5. Написать метод, которому в качестве параметра передается целое число, метод должен напечатать в консоль,
  * положительное ли число передали или отрицательное. Замечание: ноль считаем положительным числом.
@@ -19,6 +23,7 @@ public class Main {
         work3(1, 2, 3, 4);
         work4(3, 87);
         work5(-6);
+        work6(1);
     }
 
     public static void work3(float a, float b, float c, float d) {
@@ -45,5 +50,13 @@ public class Main {
         }
     }
 
+    public static void work6(int i){
+        if (i < 0) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
+
+    }
 }
 
